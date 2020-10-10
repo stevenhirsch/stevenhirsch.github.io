@@ -1,0 +1,84 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin:0;
+}
+/* Background color for top menu; 14px padding was a hack way to make sure the hover looks okay */
+#top-menu{
+  background: #181818;
+  padding:14px;
+}
+#top-menu a:hover{
+  background: rgba(12,12,12,0.9);
+}
+
+/* Changes colour for the navigation text */
+.current, .not-current {
+  color: #eeeeee;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.current{
+  background: rgba(12,12,12,0.9);
+}
+
+.not-current {
+  color: #eeeeee;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* landing page picture & text */
+#landing-page {
+  background-image:url("/assets/images/background.001.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-color: rgba(00,00,00,0.15);
+  background-blend-mode: multiply;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:0 20px;
+}
+
+#landing-page h1 {
+  font-family: verdana;
+  font-size: 90px;
+  color: #121212;
+  line-height: 1.2;
+}
+/* Button themes */
+.landing-button li {
+  float: left;
+}
+.landing-button a {
+  color: #eeeeee;
+  border: #121212 2px solid;
+  background-color: #121212;
+  padding: 16px;
+  margin:5px;
+  list-style-type: none;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size:20px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  border-radius: 10px;
+}
+.landing-button li a:hover{
+  background-color: rgba(12,12,12,0.5);
+  border: rgba(12,12,12,0) 2px solid;
+}

@@ -1,0 +1,67 @@
+---
+layout: default
+title: Steven's Page
+---
+<!-- Landing Page -->
+<header id="landing-page">
+  <h1> Steven Hirsch </h1>
+  <!-- Main pages to navigate too with blogs and "learn more" -->
+  <ul class="landing-button">
+    {% for item in site.data.highlights %}
+      <li> <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+  </ul>
+  <!-- Main social media & content outlets -->
+  <ul>
+    {% for item in site.data.social %}
+      <li> <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+  </ul>
+</header>
+
+<!-- About- Very Brief summary, click to read more about me -->
+<div id="about">
+  <h2> About Me </h2>
+  <p> I'm a ... </p>
+</div>
+
+<!-- Services -->
+<div id="services">
+  <h2> Services </h2>
+  <h3> What can I do for you? </h3>
+  <ul>
+    <li> Health, Exercise, and Sport </li>
+    <ul>
+      <li> (Online) Personal Training </li>
+      <li> Exercise Technique Analysis</li>
+    </ul>
+    <li> Technical </li>
+    <ul>
+      <li>Machine Learning</li>
+      <li>Data Visualization</li>
+      <li>Biomechanical Modelling</li>
+      <li>Statistical Modelling/Forecasting</li>
+    </ul>
+    <li> Content Creation </li>
+    <ul>
+      <li>Writing Blog Articles</li>
+      <li>Copywriting and Proofreading</li>
+      <li>Creating Infographics</li>
+    </ul>
+  </ul>
+</div>
+
+<!-- Brief Resume, click for full CV -->
+<div id="resume">
+  <h2> Resume </h2>
+  <h3> Education <h3>
+  <h3> Work Experience </h3>
+</div>
+
+<!-- Email list to never miss a beat -->
+
+
+<!-- Footer with location & email -->
+<div id="footer">
+  <h2> Footer </h2>
+</div>
