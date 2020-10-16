@@ -1,5 +1,25 @@
-<nav id= "top-menu">
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% else %} class="not-current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
+<nav class="topnav" id="myTopnav">
+  {% if site.data.navigation.nav-menu[0] %}
+    {% for item in site.data.navigation.nav-menu %}
+        {% if item.submenu[0] %}
+            {% for entry in item.submenu %}
+              {% if entry.subsubmenu[0] %}
+                  <div class= "dropdown">
+                    <button class="dropbtn">{{ entry.page }}
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class= "dropdown-content">
+                      {% for subentry in entry.subsubmenu %}
+                      <a href="{{ subentry.url }}" {% if page.url == subentry.url %} id="active" {% endif %}>{{ subentry.page }}</a>
+                      {% endfor %}
+                    </div>
+                  </div>
+              {% else %}
+                <a href="{{ entry.url }}" {% if page.url == entry.url %} id="active" {% endif %}>{{ entry.page }}</a>
+              {% endif %}
+            {% endfor %}
+        {% endif %}
+      {% endfor %}
+  {% endif %}
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>

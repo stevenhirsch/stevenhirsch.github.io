@@ -1,0 +1,10 @@
+<div id= "footer">
+  <ul class= "sm_icon">
+    {% for item in site.data.social %}
+      <li> <a target= "_blank", href="{{ item.link }}"><img src="/assets/images/{{ item.name }}.svg"></a>
+    {% endfor %}
+  </ul>
+
+  <p> &#169; <span id="spanYear"></span> Steven Hirsch </p>
+  <p> Icons made by <a class="footer-links" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+</div>

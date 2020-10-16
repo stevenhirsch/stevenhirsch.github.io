@@ -1,14 +1,14 @@
-- name: Facebook
+- name: facebook
   link:
-- name: Twitter
+- name: twitter
   link:
-- name: Instagram
+- name: instagram
   link:
-- name: LinkedIn
+- name: linkedin
   link:
-- name: ResearchGate
+- name: researchgate
   link:
-- name: GitHub
+- name: github
   link:
-- name: Writing
-  link:
+- name: email
+  link: "mailto: steve.m.h@icloud.com"

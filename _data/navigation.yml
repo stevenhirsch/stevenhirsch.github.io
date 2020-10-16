@@ -1,4 +1,18 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
+nav-menu:
+  - title: menu1
+    submenu:
+      - page: Home
+        url: /
+      - page: About
+        url: /about.html
+      - page: Blogs
+        url:
+        subsubmenu:
+          - page: Personal
+            url:
+          - page: Sport & Exercise Science
+            url:
+          - page: Data Science & Statistics
+            url:
+          - page: Sports Analytics
+            url:

@@ -5,19 +5,74 @@
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </head>
   <body>
-    <nav id= "top-menu">
+    <nav class="topnav" id="myTopnav">
   
-    <a href="/"  class="not-current">Home</a>
+    
+        
+            
+              
+                <a href="/" >Home</a>
+              
+            
+              
+                <a href="/about.html"  id="active" >About</a>
+              
+            
+              
+                  <div class= "dropdown">
+                    <button class="dropbtn">Blogs
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class= "dropdown-content">
+                      
+                      <a href="" >Personal</a>
+                      
+                      <a href="" >Sport & Exercise Science</a>
+                      
+                      <a href="" >Data Science & Statistics</a>
+                      
+                      <a href="" >Sports Analytics</a>
+                      
+                    </div>
+                  </div>
+              
+            
+        
+      
   
-    <a href="/about.html" class="current" >About</a>
-  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 
     <h1 id="about-me">About Me</h1>
 
 <p>This is a page about me.</p>
+
+    <div id= "footer">
+  <ul class= "sm_icon">
+    
+      <li> <a target= "_blank", href=""><img src="/assets/images/facebook.svg"></a>
+    
+      <li> <a target= "_blank", href=""><img src="/assets/images/twitter.svg"></a>
+    
+      <li> <a target= "_blank", href=""><img src="/assets/images/instagram.svg"></a>
+    
+      <li> <a target= "_blank", href=""><img src="/assets/images/linkedin.svg"></a>
+    
+      <li> <a target= "_blank", href=""><img src="/assets/images/researchgate.svg"></a>
+    
+      <li> <a target= "_blank", href=""><img src="/assets/images/github.svg"></a>
+    
+      <li> <a target= "_blank", href="mailto: steve.m.h@icloud.com"><img src="/assets/images/email.svg"></a>
+    
+  </ul>
+
+  <p> &#169; <span id="spanYear"></span> Steven Hirsch </p>
+  <p> Icons made by <a class="footer-links" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+</div>
+
 
   </body>
 </html>

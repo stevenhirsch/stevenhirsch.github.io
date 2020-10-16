@@ -1,31 +1,29 @@
 ---
 layout: default
-title: Steven's Page
+title: Steven Hirsch
 ---
 <!-- Landing Page -->
-<header id="landing-page">
-  <h1> Steven Hirsch </h1>
-  <!-- Main pages to navigate too with blogs and "learn more" -->
-  <ul class="landing-button">
-    {% for item in site.data.highlights %}
-      <li> <a href="{{ item.link }}">{{ item.name }}</a>
-    {% endfor %}
-  </ul>
-  <!-- Main social media & content outlets -->
-  <ul>
-    {% for item in site.data.social %}
-      <li> <a href="{{ item.link }}">{{ item.name }}</a>
-    {% endfor %}
-  </ul>
-</header>
-
-<!-- About- Very Brief summary, click to read more about me -->
-<div id="about">
-  <h2> About Me </h2>
-  <p> I'm a ... </p>
+<div id= "about">
+  <div class="left-column">
+    <img src="/assets/images/me.jpeg">
+  </div>
+  <div class="right-column">
+    <h1> Who am I? </h1>
+    <p> Hi! I'm Steven Hirsch. </p>
+    <p> I am a biomechanist, strength and conditioning coach, self-taught programmer,
+     sports enthusiast, and a general lover of learning.</p>
+    <p> I've worked as a reseacher, trainer, writer, teacher, and analyst. </p>
+    <p> Read more about me below: </p>
+    <ul>
+      <li><a href="">Bio</a></li>
+      <li><a href="">Skills</a> </li>
+      <li><a href="">CV</a></li>
+    </ul>
+  </div>
+  <br style="clear:both;"/>
 </div>
 
-<!-- Services -->
+<!-- Services
 <div id="services">
   <h2> Services </h2>
   <h3> What can I do for you? </h3>
@@ -50,18 +48,12 @@ title: Steven's Page
     </ul>
   </ul>
 </div>
-
-<!-- Brief Resume, click for full CV -->
+-->
+<!-- Brief Resume, click for full CV
 <div id="resume">
   <h2> Resume </h2>
   <h3> Education <h3>
   <h3> Work Experience </h3>
 </div>
-
+-->
 <!-- Email list to never miss a beat -->
-
-
-<!-- Footer with location & email -->
-<div id="footer">
-  <h2> Footer </h2>
-</div>
