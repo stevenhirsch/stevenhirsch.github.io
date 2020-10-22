@@ -155,7 +155,7 @@ body {
 
 .left-column {
   float: left;
-  width: 60%;
+  width: 50%;
   text-align: center;
 }
 
@@ -167,7 +167,7 @@ body {
 .right-column {
   margin-top: 20px;
   float: left;
-  width: 40%;
+  width: 50%;
   display: block;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
   text-align: center;
@@ -181,22 +181,23 @@ body {
 }
 
 .right-column p{
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: left;
   color: #181818;
 }
 
 .right-column ul {
-  margin-top: 40px;
+  margin-top: 50px;
   list-style: none;
   display: inline-block;
+  text-align: center;
 }
 
 .right-column li {
   float:left;
   display: inline;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right:20px;
 }
 
 .right-column a {
@@ -219,6 +220,70 @@ body {
   .right-column {
     width: 100%;
   }
+}
+
+/* =========================================================== */
+/* =========================================================== */
+/* =========================================================== */
+/* Post Page */
+
+#post-page {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#post-page h1, h2, h3, h4, h5, p, li, ul {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  color: #181818;
+}
+
+#post-page h1{
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+#post-page h2{
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+#post-page h4{
+  font-size: 15px;
+  color: #646464;
+  margin-top: 10px;
+}
+
+#post-page img {
+  height: 0.8em;
+}
+
+#post-page ul{
+  list-style-type: none;
+}
+
+#post-page p.excerpt {
+  font-style: italic;
+}
+
+#post-page a{
+  text-decoration: none;
+  color: #4267B2;
+  font-size: 25px;
+}
+
+#post-page a:hover{
+  text-decoration: underline;
+}
+
+/* Posts  */
+
+#post h1, h2, h3, h4, h5, p, li, ul {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  color: #181818;
+}
+
+#post h1{
+  text-align: center;
 }
 
 /* =========================================================== */

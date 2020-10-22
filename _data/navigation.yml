@@ -9,10 +9,10 @@ nav-menu:
         url:
         subsubmenu:
           - page: Personal
-            url:
+            url: /blog-personal.html
           - page: Sport & Exercise Science
-            url:
+            url: /blog-sport-and-exercise-science.html
           - page: Data Science & Statistics
-            url:
-          - page: Sports Analytics
+            url: /blog-data-science-and-statistics.html
+          - page: Sport Analytics
             url:

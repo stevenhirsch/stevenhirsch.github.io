@@ -52,17 +52,17 @@ body { margin: 0; }
 /* About page */
 #about { margin: 20px 60px; }
 
-.left-column { float: left; width: 60%; text-align: center; }
+.left-column { float: left; width: 50%; text-align: center; }
 
 .left-column img { height: 400px; border-radius: 50%; }
 
-.right-column { margin-top: 20px; float: left; width: 40%; display: block; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; text-align: center; }
+.right-column { margin-top: 20px; float: left; width: 50%; display: block; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; text-align: center; }
 
 .right-column h1 { line-height: 80px; font-size: 60px; text-align: left; color: #181818; }
 
-.right-column p { margin-top: 30px; text-align: left; color: #181818; }
+.right-column p { margin-top: 50px; text-align: left; color: #181818; }
 
-.right-column ul { margin-top: 40px; list-style: none; display: inline-block; }
+.right-column ul { margin-top: 50px; list-style: none; display: inline-block; text-align: center; }
 
 .right-column li { float: left; display: inline; padding-left: 20px; padding-right: 20px; }
 
@@ -71,6 +71,35 @@ body { margin: 0; }
 .right-column a:hover { background-color: #4267B2; color: white !important; }
 
 @media screen and (max-width: 800px) { .right-column { width: 100%; } }
+
+/* =========================================================== */
+/* =========================================================== */
+/* =========================================================== */
+/* Post Page */
+#post-page { margin-left: 60px; margin-right: 60px; }
+
+#post-page h1, h2, h3, h4, h5, p, li, ul { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: #181818; }
+
+#post-page h1 { margin-bottom: 10px; font-size: 40px; }
+
+#post-page h2 { margin-top: 10px; font-size: 30px; }
+
+#post-page h4 { font-size: 15px; color: #646464; margin-top: 10px; }
+
+#post-page img { height: 0.8em; }
+
+#post-page ul { list-style-type: none; }
+
+#post-page p.excerpt { font-style: italic; }
+
+#post-page a { text-decoration: none; color: #4267B2; font-size: 25px; }
+
+#post-page a:hover { text-decoration: underline; }
+
+/* Posts  */
+#post h1, h2, h3, h4, h5, p, li, ul { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: #181818; }
+
+#post h1 { text-align: center; }
 
 /* =========================================================== */
 /* =========================================================== */

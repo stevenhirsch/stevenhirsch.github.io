@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<div id="post">
+  <h1>{{ page.title }}</h1>
+  <h4> {{ page.read-time }} minute read time. </h4>
+  <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+  {{ content }}
+</div>
