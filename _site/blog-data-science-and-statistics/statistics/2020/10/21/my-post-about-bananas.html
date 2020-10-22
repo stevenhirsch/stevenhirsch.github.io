@@ -6,6 +6,8 @@
     <title>My Post About Bananas</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script type="text/javascript" src="/assets/js/main.js"></script>
+    <!-- Renders latex for blog -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   </head>
   <body>
     <nav class="topnav" id="myTopnav">
@@ -46,10 +48,13 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 
-    <div id="post">
+    <div id="post-head">
   <h1>My Post About Bananas</h1>
-  <h4> 10 minute read time. </h4>
-  <p>21 Oct 2020 - jill</p>
+  <h4 class="title-meta"> <img src="/assets/images/calendar.svg"> 21 Oct 2020 &sdot; <img src="/assets/images/timer.svg"> 10 minute read time. </h4>
+  <p>
+</div>
+
+<div id="post-body">
   <p>DS banana.</p>
 
 </div>

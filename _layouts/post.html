@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<div id="post">
+<div id="post-head">
   <h1>{{ page.title }}</h1>
-  <h4> {{ page.read-time }} minute read time. </h4>
-  <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+  <h4 class="title-meta"> <img src="/assets/images/calendar.svg"> {{ page.date | date_to_string }} &sdot; <img src="/assets/images/timer.svg"> {{ page.read-time }} minute read time. </h4>
+  <p>
+</div>
+
+<div id="post-body">
   {{ content }}
 </div>
