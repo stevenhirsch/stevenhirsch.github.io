@@ -1,61 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
-    <title>Test Post 2</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-    <script type="text/javascript" src="/assets/js/main.js"></script>
-    <!-- Renders latex for blog -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  </head>
-  <body>
-    <nav class="topnav" id="myTopnav">
-  
-    
-        
-            
-              
-                <a href="/" >Home</a>
-              
-            
-              
-                <a href="/about.html" >About</a>
-              
-            
-              
-                  <div class= "dropdown">
-                    <button class="dropbtn">Blogs
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class= "dropdown-content">
-                      
-                      <a href="/blog-personal.html" >Personal</a>
-                      
-                      <a href="/blog-sport-and-exercise-science.html" >Sport & Exercise Science</a>
-                      
-                      <a href="/blog-data-science-and-statistics.html" >Data Science & Statistics</a>
-                      
-                      <a href="" >Sport Analytics</a>
-                      
-                    </div>
-                  </div>
-              
-            
-        
-      
-  
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</nav>
-
-    <div id="post-head">
-  <h1>Test Post 2</h1>
-  <h4 class="title-meta"> <img src="/assets/images/calendar.svg"> 22 Oct 2020 &sdot; <img src="/assets/images/timer.svg"> 30 minute read time. </h4>
-</div>
-
-<div id="post-body">
-  <h1 id="1-introduction">1. Introduction</h1>
+I"=<h1 id="1-introduction">1. Introduction</h1>
 <p>Hello hello.</p>
 <h2 id="11-background">1.1 Background</h2>
 <p>I’m going to write a bunch of stuff in here to see how it renders. Going to add more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more and more characters to test it.</p>
@@ -173,32 +116,4 @@
 </blockquote>
 
 <p>Note a huge fan of this, though.</p>
-
-</div>
-
-    <div id= "footer">
-  <ul class= "sm_icon">
-    
-      <li> <a target= "_blank", href=""><img src="/assets/images/facebook.svg"></a>
-    
-      <li> <a target= "_blank", href=""><img src="/assets/images/twitter.svg"></a>
-    
-      <li> <a target= "_blank", href=""><img src="/assets/images/instagram.svg"></a>
-    
-      <li> <a target= "_blank", href=""><img src="/assets/images/linkedin.svg"></a>
-    
-      <li> <a target= "_blank", href=""><img src="/assets/images/researchgate.svg"></a>
-    
-      <li> <a target= "_blank", href=""><img src="/assets/images/github.svg"></a>
-    
-      <li> <a target= "_blank", href="mailto: steve.m.h@icloud.com"><img src="/assets/images/email.svg"></a>
-    
-  </ul>
-
-  <p> &#169; <span id="spanYear"></span> Steven Hirsch </p>
-  <p> Icons made by <a class="footer-links" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
-</div>
-
-
-  </body>
-</html>
+:ET

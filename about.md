@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: about
 title: About Me
 ---
 
-# About Me
+# Bio
 
-This is a page about me.
+This is a page about me blah blah blah blah blah.
