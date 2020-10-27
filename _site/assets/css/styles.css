@@ -1,17 +1,20 @@
+/* Declaring Global Variables */
+:root { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --defaultpadding: 220px; --mobilepadding: 60px; }
+
 html { scroll-behavior: smooth; }
 
 * { margin: 0; padding: 0; }
 
-body { margin: 0; }
+body { margin: 0; background-color: var(--backgroundcolor); }
 
 /* =========================================================== */
 /* =========================================================== */
 /* =========================================================== */
 /* Add a black background color to the top navigation */
-.topnav { background-color: white; overflow: hidden; padding-left: 220px; padding-right: 220px; padding-top: 10px; padding-bottom: 10px; margin-bottom: 40px; border-bottom: 0.5px solid #181818; }
+.topnav { background-color: var(--backgroundcolor); overflow: hidden; padding-left: var(--defaultpadding); padding-right: var(--defaultpadding); padding-top: 10px; padding-bottom: 10px; margin-bottom: 40px; border-bottom: 0.5px solid #181818; }
 
 /* Style the links inside the navigation bar */
-.topnav a { float: left; color: #181818 !important; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 20px; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
+.topnav a { float: left; color: var(--textcolour) !important; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 20px; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
 
 /* Add an active class to highlight the current page */
 #active { /*color: rgba(238,238,238, 0.5)*/ }
@@ -23,13 +26,13 @@ body { margin: 0; }
 .dropdown { float: left; overflow: hidden; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
 
 /* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn { font-size: 20px; border: none; outline: none; color: #181818; padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
+.dropdown .dropbtn { font-size: 20px; border: none; outline: none; color: var(--textcolour); padding: 14px 16px; background-color: inherit; font-family: inherit; margin: 0; }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content { display: none; position: absolute; background-color: #eeeeee; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; border-radius: 5px; }
 
 /* Style the links inside the dropdown */
-.dropdown-content a { float: none; color: #181818; padding: 12px 16px; text-decoration: none; display: block; text-align: left; font-size: 15px; }
+.dropdown-content a { float: none; color: var(--textcolour); padding: 12px 16px; text-decoration: none; display: block; text-align: left; font-size: 15px; }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover, .dropdown:hover .dropbtn { background-color: #4267B2; color: white !important; border-radius: 5px; }
@@ -41,7 +44,7 @@ body { margin: 0; }
 .dropdown:hover .dropdown-content { display: block; }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) { .topnav a:not(:first-child), .dropdown .dropbtn { display: none; } .topnav a.icon { float: right; display: block; } .topnav { padding-left: 40px; padding-right: 40px; } }
+@media screen and (max-width: 800px) { .topnav a:not(:first-child), .dropdown .dropbtn { display: none; } .topnav a.icon { float: right; display: block; } .topnav { padding-left: 60px; padding-right: 60px; } }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 800px) { .topnav.responsive { position: relative; } .topnav.responsive a.icon { position: absolute; right: 0; top: 0; } .topnav.responsive a { float: none; display: block; text-align: left; padding-top: 10px; } .topnav.responsive .dropdown { float: none; border-radius: 5px; } .topnav.responsive .dropdown-content { position: relative; border-radius: 5px; } .topnav.responsive .dropdown .dropbtn { display: block; width: 100%; text-align: left; border-radius: 5px; } }
@@ -58,17 +61,17 @@ body { margin: 0; }
 
 .right-column { margin-top: 20px; float: left; width: 50%; display: block; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; text-align: center; }
 
-.right-column h1 { line-height: 80px; font-size: 60px; text-align: left; color: #181818; }
+.right-column h1 { line-height: 80px; font-size: 60px; text-align: left; color: var(--textcolour); }
 
-.right-column p { margin-top: 50px; text-align: left; color: #181818; }
+.right-column p { margin-top: 50px; text-align: left; color: var(--textcolour); }
 
 .right-column ul { margin-top: 50px; list-style: none; display: inline-block; text-align: center; }
 
 .right-column li { float: left; display: inline; padding-left: 20px; padding-right: 20px; }
 
-.right-column a { text-decoration: none; border: #4267B2 solid 2px; color: #181818 !important; padding-left: 30px; padding-top: 15px; padding-bottom: 15px; padding-right: 30px; border-radius: 5px; }
+.right-column a { text-decoration: none; border: #4267B2 solid 2px; color: var(--textcolour) !important; padding-left: 30px; padding-top: 15px; padding-bottom: 15px; padding-right: 30px; border-radius: 5px; }
 
-.right-column a:hover { background-color: #4267B2; color: white !important; }
+.right-column a:hover { background-color: #4267B2; color: var(--backgroundcolor) !important; }
 
 @media screen and (max-width: 800px) { .right-column { width: 100%; } }
 
@@ -76,11 +79,13 @@ body { margin: 0; }
 /* =========================================================== */
 /* =========================================================== */
 /* Post Page */
-#post-page { margin-left: 220px; margin-right: 220px; }
+#post-page { margin-left: var(--defaultpadding); margin-right: var(--defaultpadding); }
 
-#post-page h1, #post-page h2, #post-page h3, #post-page h4, #post-page h5, #post-page p, #post-page li, #post-page ul { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: #181818; }
+@media screen and (max-width: 800px) { #post-page { margin-left: var(--mobilepadding); margin-right: var(--mobilepadding); } }
 
-#post-page h1 { margin-bottom: 10px; font-size: 40px; }
+#post-page h1, #post-page h2, #post-page h3, #post-page h4, #post-page h5, #post-page p, #post-page li, #post-page ul { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: var(--textcolour); }
+
+#post-page h1 { margin-bottom: 10px; font-size: 60px; }
 
 #post-page h2 { margin-top: 10px; font-size: 30px; }
 
@@ -94,32 +99,32 @@ body { margin: 0; }
 
 #post-page p.excerpt { font-style: italic; }
 
-#post-page a { text-decoration: none; color: #4267B2; font-size: 25px; }
+#post-page a { text-decoration: none; color: var(--linkcolor); font-size: 25px; }
 
 #post-page a:hover { text-decoration: underline; }
 
 /* Post Head (I.e. title, post date, read time, etc.)  */
-#post-head h1, #post-head h4 { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: #181818; }
+#post-head h1, #post-head h4 { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: var(--textcolour); }
 
-#post-head h1 { font-size: 40px; }
+#post-head h1 { font-size: 60px; }
 
 #post-head h4.title-meta { margin-top: 10px; margin-bottom: 35px; font-size: 12px; }
 
-#post-head h1, #post-head h4.title-meta { margin-left: 220px; margin-right: 220px; }
+#post-head h1, #post-head h4.title-meta { margin-left: var(--defaultpadding); margin-right: var(--defaultpadding); }
 
-@media screen and (max-width: 800px) { #post-head h1, #post-head h4.title-meta { margin-left: 60px; margin-right: 60px; } }
+@media screen and (max-width: 800px) { #post-head h1, #post-head h4.title-meta { margin-left: var(--mobilepadding); margin-right: var(--mobilepadding); } }
 
 #post-head img { height: 0.8em; }
 
 /* Post Body (I.e. content)  */
 /* Based on: https://www.smashingmagazine.com/2020/07/css-techniques-legibility/ */
-#post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5, #post-body p, #post-body li { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: #181818; margin-left: 220px; margin-right: 220px; }
+#post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5, #post-body p, #post-body li { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: var(--textcolour); margin-left: var(--defaultpadding); margin-right: var(--defaultpadding); }
 
 #post-body ol, #post-body ul { margin-left: 3em; }
 
 #post-body li li { margin-left: -20px; }
 
-@media screen and (max-width: 800px) { #post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5, #post-body p, #post-body li { margin-left: 60px; margin-right: 60px; } }
+@media screen and (max-width: 800px) { #post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5, #post-body p, #post-body li { margin-left: var(--mobilepadding); margin-right: var(--mobilepadding); } }
 
 #post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5 { margin-top: 20px; margin-bottom: 5px; }
 
@@ -135,14 +140,31 @@ body { margin: 0; }
 
 #post-body p { line-height: calc(1ex / 0.32); }
 
-#post-body a { color: #4267B2; text-decoration: none; }
+#post-body a { color: var(--linkcolor); text-decoration: none; }
 
 #post-body a:hover { text-decoration: underline; }
 
-/* general formatting for code blocks */
-.highlighter-rouge { margin-left: 220px; margin-right: 220px; margin-top: 7px; margin-bottom: 7px; font-size: 16px; line-height: calc(1ex / 0.32); }
+#post-body a.definition { color: var(--definitioncolor); border-bottom: 3px double; }
 
-#post-body blockquote { background: #f9f9f9; border-left: 10px solid #ccc; margin-left: 220px; margin-right: 220px; padding-top: 0.5em; padding-bottom: 0.5em; padding-right: 10px; padding-left: 10px; font-style: italic; /*quotes: "\201C""\201D""\2018""\2019";*/ }
+#post-body a.definition:hover { text-decoration: none; }
+
+/* Table of Contents Formatting */
+#post-body #markdown-toc { margin-right: var(--defaultpadding); margin-left: var(--defaultpadding); background-color: #f8f8f8; list-style: none; }
+
+#post-body #markdown-toc li { margin-left: 5px; margin-right: 0px; list-style: none; }
+
+#post-body #markdown-toc li li { margin-left: -20px; margin-right: 0px; list-style: none; }
+
+#post-body #markdown-toc a, #post-body #markdown-toc li, #post-body #markdown-toc li li { color: var(--textcolour); }
+
+@media screen and (max-width: 800px) { #post-body #markdown-toc { margin-right: var(--mobilepadding); margin-left: var(--mobilepadding); } }
+
+/* general formatting for code blocks */
+.highlighter-rouge { margin-left: var(--defaultpadding); margin-right: var(--defaultpadding); margin-top: 7px; margin-bottom: 7px; font-size: 16px; line-height: calc(1ex / 0.32); }
+
+@media screen and (max-width: 800px) { .highlighter-rouge { margin-left: var(--mobilepadding); margin-right: var(--mobilepadding); } }
+
+#post-body blockquote { background: #f9f9f9; border-left: 10px solid #ccc; margin-left: var(--defaultpadding); margin-right: var(--defaultpadding); padding-top: 0.5em; padding-bottom: 0.5em; padding-right: 10px; padding-left: 10px; font-style: italic; /*quotes: "\201C""\201D""\2018""\2019";*/ }
 
 #post-body blockquote p { margin-left: 5px; margin-right: 5px; }
 
@@ -153,6 +175,8 @@ body { margin: 0; }
 /* =========================================================== */
 /* =========================================================== */
 #footer { margin-top: 60px; padding-left: 60px; padding-right: 60px; margin-bottom: 10px; text-align: center; border-top: 0.5px solid #181818; }
+
+@media screen and (max-width: 800px) { padding-left: 0px; padding-right: 0px; }
 
 #footer { text-align: center; }
 
@@ -166,9 +190,9 @@ body { margin: 0; }
 
 #footer li:hover { opacity: 0.5; }
 
-#footer p { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: #181818; font-size: 10px; letter-spacing: 0.01em; }
+#footer p { font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; color: var(--textcolour); font-size: 10px; letter-spacing: 0.01em; }
 
-#footer a:link, a:visited { color: #4267B2; text-decoration: none; }
+#footer a:link, a:visited { color: var(--linkcolor); text-decoration: none; }
 
 #footer a:hover { text-decoration: underline; }
 

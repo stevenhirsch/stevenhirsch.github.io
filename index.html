@@ -19,6 +19,19 @@ title: Steven Hirsch
   </div>
   <br style="clear:both;"/>
 </div>
+<!-- Sample code to print most recent articles
+<div class="test">
+  {% for post in site.posts %}
+    {% if forloop.index0 == 3 %}
+      {% break %}
+    {% else %}
+      <li>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      </li>
+    {% endif %}
+  {% endfor %}
+</div>
+-->
 
 <!-- Services
 <div id="services">

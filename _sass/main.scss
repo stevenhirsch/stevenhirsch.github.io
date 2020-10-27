@@ -1,5 +1,16 @@
+/* Declaring Global Variables */
+
+:root {
+  --textcolour: #181818;
+  --backgroundcolor: #fefefe;
+  --linkcolor: #4267B2;
+  --definitioncolor: #d2302c;
+  --defaultpadding: 220px;
+  --mobilepadding: 60px;
+}
+
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
  }
 
 * {
@@ -9,6 +20,7 @@ html {
 
 body {
   margin:0;
+  background-color: var(--backgroundcolor);
 }
 
 
@@ -19,10 +31,10 @@ body {
 /* Add a black background color to the top navigation */
 
 .topnav {
-  background-color: white;
+  background-color: var(--backgroundcolor);
   overflow: hidden;
-  padding-left: 220px;
-  padding-right: 220px;
+  padding-left: var(--defaultpadding);
+  padding-right: var(--defaultpadding);
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 40px;
@@ -32,7 +44,7 @@ body {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #181818 !important;
+  color: var(--textcolour) !important;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -64,7 +76,7 @@ body {
   font-size: 20px;
   border: none;
   outline: none;
-  color: #181818;
+  color: var(--textcolour);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -86,7 +98,7 @@ body {
 /* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: #181818;
+  color: var(--textcolour);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -125,8 +137,8 @@ body {
   }
 
   .topnav {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -187,13 +199,13 @@ body {
   line-height: 80px;
   font-size: 60px;
   text-align: left;
-  color: #181818;
+  color: var(--textcolour);
 }
 
 .right-column p{
   margin-top: 50px;
   text-align: left;
-  color: #181818;
+  color: var(--textcolour);
 }
 
 .right-column ul {
@@ -213,7 +225,7 @@ body {
 .right-column a {
   text-decoration: none;
   border: #4267B2 solid 2px;
-  color: #181818 !important;
+  color: var(--textcolour) !important;
   padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -223,7 +235,7 @@ body {
 
 .right-column a:hover {
   background-color: #4267B2;
-  color: white !important;
+  color: var(--backgroundcolor) !important;
 }
 
 @media screen and (max-width: 800px) {
@@ -238,18 +250,25 @@ body {
 /* Post Page */
 
 #post-page {
-  margin-left: 220px;
-  margin-right: 220px;
+  margin-left: var(--defaultpadding);
+  margin-right: var(--defaultpadding);
+}
+
+@media screen and (max-width: 800px) {
+  #post-page {
+    margin-left: var(--mobilepadding);
+    margin-right: var(--mobilepadding);
+  }
 }
 
 #post-page h1, #post-page h2, #post-page h3, #post-page h4, #post-page h5, #post-page p, #post-page li, #post-page ul {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  color: #181818;
+  color: var(--textcolour);
 }
 
 #post-page h1{
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 #post-page h2{
@@ -264,7 +283,6 @@ body {
 #post-page, #post h4{
   font-size: 12px;
   color: #646464;
-
 }
 
 #post-page img {
@@ -279,9 +297,9 @@ body {
   font-style: italic;
 }
 
-#post-page a{
+#post-page a {
   text-decoration: none;
-  color: #4267B2;
+  color: var(--linkcolor);
   font-size: 25px;
 }
 
@@ -293,11 +311,11 @@ body {
 
 #post-head h1, #post-head h4 {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  color: #181818;
+  color: var(--textcolour);
 }
 
 #post-head h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 #post-head h4.title-meta {
@@ -307,14 +325,14 @@ body {
 }
 
 #post-head h1, #post-head h4.title-meta{
-  margin-left: 220px;
-  margin-right: 220px;
+  margin-left: var(--defaultpadding);
+  margin-right: var(--defaultpadding);
 }
 
 @media screen and (max-width: 800px) {
   #post-head h1, #post-head h4.title-meta{
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: var(--mobilepadding);
+    margin-right: var(--mobilepadding);
   }
 }
 
@@ -327,9 +345,9 @@ body {
 
 #post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5, #post-body p, #post-body li {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  color: #181818;
-  margin-left: 220px;
-  margin-right: 220px;
+  color: var(--textcolour);
+  margin-left: var(--defaultpadding);
+  margin-right: var(--defaultpadding);
 }
 
 #post-body ol, #post-body ul {
@@ -342,8 +360,8 @@ body {
 
 @media screen and (max-width: 800px) {
   #post-body h1, #post-body h2, #post-body h3, #post-body h4, #post-body h5, #post-body p, #post-body li {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: var(--mobilepadding);
+    margin-right: var(--mobilepadding);
   }
 }
 
@@ -381,7 +399,7 @@ body {
 }
 
 #post-body a{
-  color: #4267B2;
+  color: var(--linkcolor);
   text-decoration: none;
 }
 
@@ -389,21 +407,69 @@ body {
   text-decoration: underline;
 }
 
+#post-body a.definition{
+  color: var(--definitioncolor);
+  border-bottom: 3px double;
+}
+
+#post-body a.definition:hover{
+  text-decoration: none;
+}
+
+/* Table of Contents Formatting */
+
+#post-body #markdown-toc {
+  margin-right: var(--defaultpadding);
+  margin-left: var(--defaultpadding);
+  background-color: #f8f8f8;
+  list-style: none;
+}
+
+#post-body #markdown-toc li {
+  margin-left: 5px;
+  margin-right: 0px;
+  list-style: none;
+}
+
+#post-body #markdown-toc li li {
+  margin-left: -20px;
+  margin-right: 0px;
+  list-style: none;
+}
+
+#post-body #markdown-toc a, #post-body #markdown-toc li, #post-body #markdown-toc li li {
+  color: var(--textcolour);
+}
+
+@media screen and (max-width: 800px) {
+  #post-body #markdown-toc {
+    margin-right: var(--mobilepadding);
+    margin-left: var(--mobilepadding);
+  }
+}
+
 /* general formatting for code blocks */
 .highlighter-rouge {
-  margin-left: 220px;
-  margin-right: 220px;
+  margin-left: var(--defaultpadding);
+  margin-right: var(--defaultpadding);
   margin-top: 7px;
   margin-bottom: 7px;
   font-size: 16px;
   line-height: calc(1ex / 0.32);
 }
 
+@media screen and (max-width: 800px) {
+  .highlighter-rouge {
+    margin-left: var(--mobilepadding);
+    margin-right: var(--mobilepadding);
+  }
+}
+
 #post-body blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin-left: 220px;
-  margin-right: 220px;
+  margin-left: var(--defaultpadding);
+  margin-right: var(--defaultpadding);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-right: 10px;
@@ -439,6 +505,11 @@ body {
   border-top: 0.5px solid #181818;
 }
 
+@media screen and (max-width: 800px) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #footer {
     text-align: center;
 }
@@ -466,13 +537,13 @@ body {
 
 #footer p {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-  color: #181818;
+  color: var(--textcolour);
   font-size: 10px;
   letter-spacing: 0.01em;
 }
 
 #footer a:link, a:visited{
-  color: #4267B2;
+  color: var(--linkcolor);
   text-decoration: none;
 }
 
