@@ -3,8 +3,17 @@ nav-menu:
     submenu:
       - page: Home
         url: /
+      #- page: About
+      #  url: /about.html
       - page: About
-        url: /about.html
+        url:
+        subsubmenu:
+          - page: Bio
+            url:
+          - page: Publications
+            url:
+          - page: Resume/CV
+            url:
       - page: Blogs
         url:
         subsubmenu:
