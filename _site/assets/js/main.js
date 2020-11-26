@@ -12,3 +12,19 @@ window.onload = function()
 {
   document.getElementById("spanYear").innerHTML = new Date().getFullYear();
 }
+
+/* For text apperance on main page */
+'use strict';
+window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        var wrapper = document.getElementById('wrapper');
+        if (typeof wrapper.classList !== 'undefined') {
+            wrapper.classList.add('slide-items');
+        }
+        else {
+            var curentclass = wrapper.className;
+            currentclass += ' slide-items';
+            wrapper.className = currentclass;
+        }
+    }, 2000);
+});
