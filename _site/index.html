@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" >
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content= "width=device-width, initial-scale=1.0">
@@ -59,37 +59,30 @@
         
       
   
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
+  <!--<div class="theme-switch-wrapper">
+       <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider round"></div>
+  </label>
+  </div>-->
+  <a id="theme-toggle" onclick="modeSwitcher()"></a>
 </nav>
 
     <!-- Landing Page -->
 
 <div id= "about">
-  <!-- <div class="left-column">
-    <img src="/assets/images/me.jpeg">
-  </div>
-  <div class="right-column">
-    <h1> Who am I? </h1>
-    <p> Hi! I'm Steven Hirsch. </p>
-    <p> I am a biomechanist, strength and conditioning coach, self-taught programmer,
-     sports enthusiast, and a general lover of learning.</p>
-    <p> I've worked as a reseacher, trainer, writer, teacher, and analyst. </p>
-    <ul>
-      <li><a href="/about.html"> Learn more about me </a></li>
-    </ul>
-  </div>
-  <br style="clear:both;"/>
-    -->
     <h1> Hi <span class="wave">👋</span>, I'm Steven. </h1>
     <div class="wrapper slide-items-in-from-bottom" id="wrapper">
       <p> I am currently a Ph.D. student at the University of Toronto studying
       Sport and Exercise Biomechanics. </p>
-      <p class="delay1"> I am interested in <a href= "/blog-sport-and-exercise-science.html">sport and exercise science</a>, <a href="/blog-data-science-and-statistics.html">statistics</a>,
+      <p> I am interested in <a href= "/blog-sport-and-exercise-science.html">sport and exercise science</a>, <a href="/blog-data-science-and-statistics.html">statistics</a>,
       sports analytics, philosphy, and all things math. </p>
-      <p class="delay2"> I've worked as a researcher, consultant, analyst,
+      <!--class="delay1" if you want to insert delays-->
+      <p> I've worked as a researcher, consultant, analyst,
         strength and conditioning coach, teacher, and writer for multiple
-        organizations and companies. If you'd like to hire me, let's get in touch. </p>
-      <p class="delay3"> Keep up with my latest work on ResearchGate, GitHub, or wherever else I'm currently sharing thoughts and ideas.</p>
+        organizations and companies. If you'd like to work with me, <a href="mailto: steve.m.h@icloud.com">let's get in touch</a>. </p>
+      <p> Keep up with my latest work on ResearchGate, GitHub, or wherever else I'm currently sharing thoughts and ideas.</p>
     </div>
 
 </div>
@@ -179,8 +172,72 @@
 
   <p> &#169; <span id="spanYear"></span> Steven Hirsch </p>
   <p> Icons made by <a class="footer-links" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+  <p> I don't collect cookies 🍪 </p>
 </div>
 
 
+    <script>
+    // this checks whether system dark mode is set
+    let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
+    // this checks for session storage telling to override
+    // the system preferences
+    let theme = sessionStorage.getItem('theme');
+    if (systemInitiatedDark.matches) {
+    	document.getElementById("theme-toggle").innerHTML = "☀";
+    } else {
+    	document.getElementById("theme-toggle").innerHTML = "☽";
+    }
+
+    function prefersColorTest(systemInitiatedDark) {
+      if (systemInitiatedDark.matches) {
+      	document.documentElement.setAttribute('data-theme', 'dark');
+       	document.getElementById("theme-toggle").innerHTML = "☀";
+       	// this clears the session storage
+       	sessionStorage.setItem('theme', '');
+      } else {
+      	document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById("theme-toggle").innerHTML = "☽";
+        sessionStorage.setItem('theme', '');
+      }
+    }
+    systemInitiatedDark.addListener(prefersColorTest);
+
+    function modeSwitcher() {
+    // it’s important to check for overrides again
+    	let theme = sessionStorage.getItem('theme');
+    	// checks if reader selected dark mode
+    	if (theme === "dark") {
+    		document.documentElement.setAttribute('data-theme', 'light');
+    		sessionStorage.setItem('theme', 'light');
+    		document.getElementById("theme-toggle").innerHTML = "☽";
+    		// checks if reader selected light mode
+    	}	else if (theme === "light") {
+    		document.documentElement.setAttribute('data-theme', 'dark');
+    		sessionStorage.setItem('theme', 'dark');
+    		document.getElementById("theme-toggle").innerHTML = "☀";
+    		// checks if system set dark mode
+    	} else if (systemInitiatedDark.matches) {
+    		document.documentElement.setAttribute('data-theme', 'light');
+    		sessionStorage.setItem('theme', 'light');
+    		document.getElementById("theme-toggle").innerHTML = "☽";
+    		// the only option left is system set light mode
+    	} else {
+    		document.documentElement.setAttribute('data-theme', 'dark');
+    		sessionStorage.setItem('theme', 'dark');
+    		document.getElementById("theme-toggle").innerHTML = "☀";
+    	}
+    }
+
+    if (theme === "dark") {
+    	document.documentElement.setAttribute('data-theme', 'dark');
+    	sessionStorage.setItem('theme', 'dark');
+    	document.getElementById("theme-toggle").innerHTML = "☀";
+    } else if (theme === "light") {
+    	document.documentElement.setAttribute('data-theme', 'light');
+    	sessionStorage.setItem('theme', 'light');
+    	document.getElementById("theme-toggle").innerHTML = "☽";
+    }
+    /* Based on https://derekkedziora.com/blog/dark-mode-revisited */
+    </script>
   </body>
 </html>
