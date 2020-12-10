@@ -23,11 +23,11 @@
 /* :root { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --definitioncolor: #2cb673; --defaultpadding: 220px; --mobilepadding: 20px; --mainfontfamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; } [data-theme='dark'] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; } */
 :root { --defaultpadding: 220px; --mobilepadding: 20px; --mainfontfamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
 
-html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; }
+html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; --svgfilter: invert(0); }
 
-html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #4267B2; }
+html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #4267B2; --svgfilter: invert(1); }
 
-@media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #4267B2; } html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; } }
+@media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #4267B2; --svgfilter: invert(1); } html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; --svgfilter: invert(0); } }
 
 #theme-toggle { float: right; }
 
@@ -151,7 +151,9 @@ nav a#theme-toggle:hover { background-color: var(--backgroundcolor); color: var(
 
 #post-page, #post h4 { font-size: 12px; color: #646464; }
 
-#post-page img { height: 0.8em; }
+#post-page img { height: 1em; }
+
+#post-page h4 img { filter: var(--svgfilter); }
 
 #post-page ul { list-style-type: none; }
 

@@ -53,6 +53,7 @@ html, html[data-theme="light"] {
   --menubackground: #eeeeee;
   --menubackgroundhover: #ddd;
   --menuitemhover: #4267B2;
+  --svgfilter: invert(0);
 }
 
 html[data-theme="dark"]{
@@ -63,6 +64,7 @@ html[data-theme="dark"]{
   --menubackground: #404040;
   --menubackgroundhover: #606060;
   --menuitemhover: #4267B2;
+  --svgfilter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,6 +76,7 @@ html[data-theme="dark"]{
       --menubackground: #404040;
       --menubackgroundhover: #606060;
       --menuitemhover: #4267B2;
+      --svgfilter: invert(1);
     }
 
     html, html[data-theme="light"] {
@@ -84,6 +87,7 @@ html[data-theme="dark"]{
       --menubackground: #eeeeee;
       --menubackgroundhover: #ddd;
       --menuitemhover: #4267B2;
+      --svgfilter: invert(0);
     }
 
 }
@@ -397,7 +401,11 @@ nav a:hover#theme-toggle {
 }
 
 #post-page img {
-  height: 0.8em;
+  height: 1em;
+}
+
+#post-page h4 img {
+  filter: var(--svgfilter);
 }
 
 #post-page ul{
