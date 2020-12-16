@@ -1,8 +1,8 @@
 nav-menu:
   - title: menu1
     submenu:
-      - page: Home
-        url: /
+    #  - page: Steven
+    #    url: /
       #- page: About
       #  url: /about.html
       - page: About
@@ -14,14 +14,14 @@ nav-menu:
             url:
           - page: Resume/CV
             url:
-      - page: Blogs
-        url:
-        subsubmenu:
-          - page: Personal
-            url: /blog-personal.html
-          - page: Sport & Exercise Science
-            url: /blog-sport-and-exercise-science.html
-          - page: Data Science & Statistics
-            url: /blog-data-science-and-statistics.html
-          - page: Sport Analytics
-            url:
+      - page: Blog
+        url: /blog.html
+#        subsubmenu:
+#          - page: Personal
+#            url: /blog-personal.html
+#          - page: Sport & Exercise Science
+#            url: /blog-sport-and-exercise-science.html
+#          - page: Data Science & Statistics
+#            url: /blog-data-science-and-statistics.html
+#          - page: Sport Analytics
+#            url:

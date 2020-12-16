@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+---
+<div id="post-page">
+  <h1>Random Thoughts and Ideas</h1>
+  <ul>
+    {% for post in site.posts %}
+      {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h2 id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+        <ul>
+        {% assign date = currentdate %}
+      {% endif %}
+        <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h4> <img src="/assets/images/calendar.svg"> {{ post.date | date_to_string | date: "%-d %B" }} &sdot; <img src="/assets/images/timer.svg"> {{ post.read-time }} minute read time. </h4>    
+        </li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  </ul>
+</div>

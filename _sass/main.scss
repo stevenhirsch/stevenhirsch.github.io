@@ -1,44 +1,5 @@
 /* Declaring Global Variables */
-/* Trying a different toggle for Dark mode */
-/*@media (prefers-color-scheme: light) {
-  :root {
-    --textcolour: #eeeeee;
-    --backgroundcolor: #121212;
-    --linkcolor: #4267B2;
-    --definitioncolor: #2cb673;
-  }
 
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --textcolour: #181818;
-    --backgroundcolor: #fefefe;
-    --linkcolor: #4267B2;
-    --definitioncolor: #2cb673;
-  }
-
-}
-*/
-/*
-:root {
-  --textcolour: #181818;
-  --backgroundcolor: #fefefe;
-  --linkcolor: #4267B2;
-  --definitioncolor: #d2302c;
-  --definitioncolor: #2cb673;
-  --defaultpadding: 220px;
-  --mobilepadding: 20px;
-  --mainfontfamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
-}
-
-[data-theme='dark'] {
-    --textcolour: #eeeeee;
-    --backgroundcolor: #121212;
-    --linkcolor: #4267B2;
-    --definitioncolor: #2cb673;
-}
-*/
 :root {
   --defaultpadding: 220px;
   --mobilepadding: 20px;
@@ -54,41 +15,34 @@ html, html[data-theme="light"] {
   --menubackgroundhover: #ddd;
   --menuitemhover: #4267B2;
   --svgfilter: invert(0);
+  --sectionline: rgba(00,00,00,0.25)
 }
 
 html[data-theme="dark"]{
   --textcolour: #eeeeee;
   --backgroundcolor: #121212;
-  --linkcolor: #4267B2;
+  --linkcolor: #4078c0;
   --definitioncolor: #2cb673;
   --menubackground: #404040;
   --menubackgroundhover: #606060;
-  --menuitemhover: #4267B2;
+  --menuitemhover: #3282b8;
   --svgfilter: invert(1);
+  --sectionline: rgba(256,256,256,0.25);
 }
 
 @media (prefers-color-scheme: dark) {
     html, html[data-theme="dark"]{
       --textcolour: #eeeeee;
       --backgroundcolor: #121212;
-      --linkcolor: #4267B2;
+      --linkcolor: #4078c0;
       --definitioncolor: #2cb673;
       --menubackground: #404040;
       --menubackgroundhover: #606060;
-      --menuitemhover: #4267B2;
+      --menuitemhover: #3282b8;
       --svgfilter: invert(1);
+      --sectionline: rgba(256,256,256,0.25);
     }
 
-    html, html[data-theme="light"] {
-      --textcolour: #181818;
-      --backgroundcolor: #fefefe;
-      --linkcolor: #4267B2;
-      --definitioncolor: #d2302c;
-      --menubackground: #eeeeee;
-      --menubackgroundhover: #ddd;
-      --menuitemhover: #4267B2;
-      --svgfilter: invert(0);
-    }
 
 }
 
@@ -135,7 +89,7 @@ body {
 /* =========================================================== */
 /* =========================================================== */
 
-/* Add a black background color to the top navigation */
+/* Topnav formatting */
 
 .topnav {
   background-color: var(--backgroundcolor);
@@ -387,17 +341,24 @@ nav a:hover#theme-toggle {
 }
 
 #post-page h2{
-  margin-top: 10px;
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 50px;
 }
 
+
+
 #post-page h3{
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #post-page, #post h4{
   font-size: 12px;
   color: #646464;
+}
+
+#post-page h4{
+  padding-bottom: 10px; 
+  border-bottom: 0.1px solid var(--sectionline);
 }
 
 #post-page img {
@@ -418,7 +379,7 @@ nav a:hover#theme-toggle {
 
 #post-page a {
   text-decoration: none;
-  color: var(--linkcolor);
+  color: var(--textcolour);
   font-size: 25px;
 }
 
@@ -558,6 +519,14 @@ nav a:hover#theme-toggle {
 
 #post-body #markdown-toc a, #post-body #markdown-toc li, #post-body #markdown-toc li li {
   color: var(--textcolour);
+}
+
+.equation{
+    color: var(--textcolour);
+    display:table;
+    margin:0 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 @media screen and (max-width: 800px) {

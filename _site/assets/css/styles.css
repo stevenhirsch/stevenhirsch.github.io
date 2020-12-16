@@ -1,33 +1,12 @@
 /* Declaring Global Variables */
-/* Trying a different toggle for Dark mode */
-/*@media (prefers-color-scheme: light) {
-  :root {
-    --textcolour: #eeeeee;
-    --backgroundcolor: #121212;
-    --linkcolor: #4267B2;
-    --definitioncolor: #2cb673;
-  }
-
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --textcolour: #181818;
-    --backgroundcolor: #fefefe;
-    --linkcolor: #4267B2;
-    --definitioncolor: #2cb673;
-  }
-
-}
-*/
-/* :root { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --definitioncolor: #2cb673; --defaultpadding: 220px; --mobilepadding: 20px; --mainfontfamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; } [data-theme='dark'] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; } */
 :root { --defaultpadding: 220px; --mobilepadding: 20px; --mainfontfamily: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; }
 
-html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; --svgfilter: invert(0); }
+html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; --svgfilter: invert(0); --sectionline: rgba(00,00,00,0.25)
+; }
 
-html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #4267B2; --svgfilter: invert(1); }
+html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4078c0; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #3282b8; --svgfilter: invert(1); --sectionline: rgba(256,256,256,0.25); }
 
-@media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4267B2; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #4267B2; --svgfilter: invert(1); } html, html[data-theme="light"] { --textcolour: #181818; --backgroundcolor: #fefefe; --linkcolor: #4267B2; --definitioncolor: #d2302c; --menubackground: #eeeeee; --menubackgroundhover: #ddd; --menuitemhover: #4267B2; --svgfilter: invert(0); } }
+@media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --textcolour: #eeeeee; --backgroundcolor: #121212; --linkcolor: #4078c0; --definitioncolor: #2cb673; --menubackground: #404040; --menubackgroundhover: #606060; --menuitemhover: #3282b8; --svgfilter: invert(1); --sectionline: rgba(256,256,256,0.25); } }
 
 #theme-toggle { float: right; }
 
@@ -52,7 +31,7 @@ body { margin: 0; background-color: var(--backgroundcolor); }
 /* =========================================================== */
 /* =========================================================== */
 /* =========================================================== */
-/* Add a black background color to the top navigation */
+/* Topnav formatting */
 .topnav { background-color: var(--backgroundcolor); overflow: hidden; padding-left: var(--defaultpadding); padding-right: var(--defaultpadding); padding-top: 10px; padding-bottom: 10px; margin-bottom: 40px; border-bottom: 0.5px solid var(--textcolour); }
 
 /* Style the links inside the navigation bar */
@@ -145,11 +124,13 @@ nav a#theme-toggle:hover { background-color: var(--backgroundcolor); color: var(
 
 #post-page h1 { margin-bottom: 10px; font-size: 60px; }
 
-#post-page h2 { margin-top: 10px; font-size: 30px; }
+#post-page h2 { margin-top: 40px; font-size: 50px; }
 
-#post-page h3 { margin-top: 30px; }
+#post-page h3 { margin-top: 20px; }
 
 #post-page, #post h4 { font-size: 12px; color: #646464; }
+
+#post-page h4 { padding-bottom: 10px; border-bottom: 0.1px solid var(--sectionline); }
 
 #post-page img { height: 1em; }
 
@@ -159,7 +140,7 @@ nav a#theme-toggle:hover { background-color: var(--backgroundcolor); color: var(
 
 #post-page p.excerpt { font-style: italic; }
 
-#post-page a { text-decoration: none; color: var(--linkcolor); font-size: 25px; }
+#post-page a { text-decoration: none; color: var(--textcolour); font-size: 25px; }
 
 #post-page a:hover { text-decoration: underline; }
 
@@ -216,6 +197,8 @@ nav a#theme-toggle:hover { background-color: var(--backgroundcolor); color: var(
 #post-body #markdown-toc li li { margin-left: -20px; margin-right: 0px; list-style: none; }
 
 #post-body #markdown-toc a, #post-body #markdown-toc li, #post-body #markdown-toc li li { color: var(--textcolour); }
+
+.equation { color: var(--textcolour); display: table; margin: 0 auto; padding-top: 2em; padding-bottom: 2em; }
 
 @media screen and (max-width: 800px) { #post-body #markdown-toc { margin-right: var(--mobilepadding); margin-left: var(--mobilepadding); } }
 
