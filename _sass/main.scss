@@ -420,6 +420,10 @@ nav a:hover#theme-toggle {
   height: 0.8em;
 }
 
+#post-head h4 img {
+  filter: var(--svgfilter);
+}
+
 /* Post Body (I.e. content)  */
 /* Based on: https://www.smashingmagazine.com/2020/07/css-techniques-legibility/ */
 
@@ -495,6 +499,9 @@ nav a:hover#theme-toggle {
 #post-body a.definition:hover{
   text-decoration: none;
 }
+
+
+
 
 /* Table of Contents Formatting */
 

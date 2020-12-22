@@ -7,10 +7,12 @@
 - name: youtube
   link:
 - name: linkedin
-  link:
+  link: "https://www.linkedin.com/in/steven-m-hirsch"
 - name: researchgate
-  link:
+  link: "https://www.researchgate.net/profile/Steven_Hirsch3"
 - name: github
-  link:
+  link: "https://github.com/stevenhirsch"
+- name: googlescholar
+  link: "https://scholar.google.com/citations?user=ON5nvBkAAAAJ&hl=en"
 - name: email
   link: "mailto: steve.m.h@icloud.com"

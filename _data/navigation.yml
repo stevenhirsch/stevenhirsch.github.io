@@ -1,8 +1,8 @@
 nav-menu:
   - title: menu1
     submenu:
-    #  - page: Steven
-    #    url: /
+      - page: Home
+        url: /
       #- page: About
       #  url: /about.html
       - page: About
