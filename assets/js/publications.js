@@ -59,7 +59,7 @@
     root.innerHTML = html;
   }
 
-  fetch("data/publications.json")
+  fetch("/data/publications.json")
     .then(function (res) {
       if (!res.ok) throw new Error("Failed to load publications");
       return res.json();
