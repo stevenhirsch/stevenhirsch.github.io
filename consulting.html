@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consulting | Steven Hirsch</title>
+<meta name="description" content="Independent consulting from Steven Hirsch on applied ML/AI, biomechanics, and sport-tech data strategy.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="index.html">Steven Hirsch</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="writing.html">Writing</a>
+      <a href="consulting.html" aria-current="page">Consulting</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Consulting</h1>
+    <p class="lede">
+      Outside of my role at Tonal, I take on select independent consulting work through
+      Steven Hirsch Consulting Ltd., with an emphasis on:
+    </p>
+
+    <ul class="plain services">
+      <li>Technical and product strategy: technology appraisal, roadmap sequencing, build-vs-buy calls, and team
+        structure for founders and executives building sport-science or health-tech data
+        capabilities.</li>
+      <li>Applied ML/AI for sport and movement data, including computer vision, sensor fusion,
+        and statistical models that turn multi-modal sensor data (video, IMU, force plates,
+        GPS) into practical, user- or coach-facing insight.</li>
+      <li>Evaluating and implementing motion-capture and sensor technologies (3D motion
+        capture, force plates, video, IMUs, linear position transducers) for game, practice,
+        gym, and clinical settings.</li>
+      <li>Causal inference and experimental design for evaluating training interventions and
+        performance/injury-risk outcomes.</li>
+    </ul>
+
+    <p>
+      I've worked with organizations including MLB and NHL teams on performance and injury-risk
+      analytics. I've also privately trained professional hockey players, olympic athletes, and business leaders. See <a href="publications.html">Publications</a> for examples of the research
+      this work draws on. Often, this applied work cannot be shared publicly, so treat
+      those as background rather than a complete portfolio.
+    </p>
+
+    <div class="cta">
+      <p>Interested in working together? Send a message below, or connect on
+        <a href="https://www.linkedin.com/in/steven-m-hirsch/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvodvpyl" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;">
+
+        <button type="submit">Send message</button>
+        <p id="contact-status" class="form-status" role="status" hidden></p>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year"></span> Steven Hirsch</p>
+    <ul class="links-row">
+      <li><a href="https://www.linkedin.com/in/steven-m-hirsch/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://scholar.google.com/citations?user=ON5nvBkAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><a href="https://github.com/stevenhirsch" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="consulting.html#contact-form">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+(function () {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('contact-status');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    status.hidden = false;
+    status.textContent = 'Sending...';
+    status.className = 'form-status';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+      .then(function (response) {
+        if (response.ok) {
+          form.reset();
+          status.textContent = "Thanks! I'll get back to you soon.";
+          status.className = 'form-status form-status-success';
+          form.querySelectorAll('input, textarea').forEach(function (el) { el.hidden = true; });
+          form.querySelectorAll('label').forEach(function (el) { el.hidden = true; });
+          submitBtn.hidden = true;
+        } else {
+          throw new Error('Submission failed');
+        }
+      })
+      .catch(function () {
+        status.textContent = 'Something went wrong. Please try again, or reach out on LinkedIn.';
+        status.className = 'form-status form-status-error';
+        submitBtn.disabled = false;
+      });
+  });
+})();
+</script>
+</body>
+</html>

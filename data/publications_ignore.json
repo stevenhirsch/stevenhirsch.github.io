@@ -1,0 +1,6 @@
+{
+  "_comment": "ORCID put-codes listed here are skipped by scripts/sync_orcid_publications.py. Used for works incorrectly auto-matched to this ORCID iD by Crossref/other sources.",
+  "putCodes": [
+    221041114
+  ]
+}

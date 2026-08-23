@@ -1,0 +1,38 @@
+name: Sync publications from ORCID
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # every Monday 13:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync publications.json from ORCID
+        env:
+          ORCID_ID: "0000-0002-4394-1922"
+        run: python3 scripts/sync_orcid_publications.py
+
+      - name: Open pull request if publications changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Sync publications from ORCID"
+          title: "New publication(s) found on ORCID"
+          body: >
+            Opened automatically by the `update-publications` workflow after finding
+            new work(s) on ORCID (`0000-0002-4394-1922`) not yet in `data/publications.json`.
+            Review titles/links before merging; add any that should be excluded going
+            forward to `data/publications_ignore.json`.
+          branch: auto/sync-orcid-publications
+          delete-branch: true

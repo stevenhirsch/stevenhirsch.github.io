@@ -1,0 +1,203 @@
+[
+  {
+    "putCode": 189547525,
+    "type": "journal-article",
+    "title": "A comparison of lower extremity squat, lunge, and hip hinge kinematics between marker based and markerless motion capture systems",
+    "year": 2025,
+    "url": "http://dx.doi.org/10.1177/17543371251348697",
+    "doi": "10.1177/17543371251348697"
+  },
+  {
+    "putCode": 191612297,
+    "type": "journal-article",
+    "title": "A Critical Appraisal of Using Barbell Velocity Data to Regulate Training",
+    "year": 2025,
+    "url": "https://doi.org/10.1519/JSC.0000000000005050",
+    "doi": "10.1519/JSC.0000000000005050"
+  },
+  {
+    "putCode": 163302806,
+    "type": "journal-article",
+    "title": "Evaluating Test–Retest Reliability and Measurement Error of the Lumbar Flexion Relaxation Ratio Within and Between Days",
+    "year": 2024,
+    "url": "https://doi.org/10.1080/1091367X.2024.2377101",
+    "doi": "10.1080/1091367X.2024.2377101"
+  },
+  {
+    "putCode": 156764304,
+    "type": "journal-article",
+    "title": "The addition of blood flow restriction during resistance exercise does not increase prolonged low‐frequency force depression",
+    "year": 2024,
+    "url": "https://doi.org/10.1113/EP091753",
+    "doi": "10.1113/EP091753"
+  },
+  {
+    "putCode": 155837584,
+    "type": "journal-article",
+    "title": "Restricting lumbar spine flexion redistributes and changes total mechanical energy expenditure during lifting",
+    "year": 2024,
+    "url": "https://doi.org/10.1016/j.jbiomech.2024.112132",
+    "doi": "10.1016/j.jbiomech.2024.112132"
+  },
+  {
+    "putCode": 155837577,
+    "type": "journal-article",
+    "title": "Can we enable individuals to reach further down without rounding their backs before beginning a lift? Examining the influence of starting foot and trunk position on reach depth",
+    "year": 2024,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837580,
+    "type": "journal-article",
+    "title": "A comparison of five methods to normalize joint moments during running",
+    "year": 2023,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837578,
+    "type": "dissertation-thesis",
+    "title": "Adapting Manifold-Based Analyses to Describe How Personal and Task Constraints Impact Lower Extremity Movement Variability During Exercise",
+    "year": 2023,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837586,
+    "type": "journal-article",
+    "title": "Comparison of 5 normalization methods for knee joint moments in the single-leg squat",
+    "year": 2022,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837581,
+    "type": "journal-article",
+    "title": "Functional Movement Screen task scores and joint range-of-motion: a construct validity study",
+    "year": 2022,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837582,
+    "type": "journal-article",
+    "title": "Mechanical energy expenditure at lumbar spine and lower extremity joints during the single-leg squat is affected by the nonstance foot position",
+    "year": 2022,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837583,
+    "type": "journal-article",
+    "title": "Considerations for velocity-based training: the instruction to move “as fast as possible” is less effective than a target velocity",
+    "year": 2021,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837587,
+    "type": "journal-article",
+    "title": "Interpreting Knee Valgus: Orthogonal Distance Vs Cardan/Euler Angles",
+    "year": 2020,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": 155837585,
+    "type": "dissertation-thesis",
+    "title": "Instrument, Analysis, and Coaching Considerations with Velocity-Based Training",
+    "year": 2018,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Predicting Reps in Reserve with Machine Learning",
+    "year": 2024,
+    "url": null,
+    "doi": null,
+    "venue": "3DAHM International Symposium, Montevideo, Uruguay"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Re-Distributions in Mechanical Energy Expenditure Caused by Restricting Spine Motion During Lifting",
+    "year": 2023,
+    "url": null,
+    "doi": null,
+    "venue": "46th American Society of Biomechanics Conference, Knoxville, TN"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Kinematic Adaptations to Limiting Lumbar Spine Flexion Across Lifting Tasks",
+    "year": 2022,
+    "url": null,
+    "doi": null,
+    "venue": "5th North American Congress on Biomechanics, Ottawa, ON"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Assessing Statistical Assumptions Underlying Magnitude-Normalization of Net Joint Moments During Running",
+    "year": 2022,
+    "url": null,
+    "doi": null,
+    "venue": "5th North American Congress on Biomechanics, Ottawa, ON"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Comparing Eight Normalization Methods for Net Joint Moment Data in the Single-Leg Squat",
+    "year": 2021,
+    "url": null,
+    "doi": null,
+    "venue": "28th Congress of the International Society of Biomechanics, Stockholm, Sweden"
+  },
+  {
+    "putCode": 155837579,
+    "type": "conference-paper",
+    "title": "Velocity-Based Training: Exploring the Potential Implications of Training with Absolute versus Relative Velocities",
+    "year": 2017,
+    "url": null,
+    "doi": null
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Contrasting Performance Stability of Dynamic Knee Valgus Across Four Metrics and Two Tasks",
+    "year": 2021,
+    "url": null,
+    "doi": null,
+    "venue": "21st Canadian Society for Biomechanics Conference, Montreal, QC"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Initial Trunk and Foot Position Can be Adapted to Allow Lifters to Reach Lower-Lying Objects Without Rounding Their Back",
+    "year": 2021,
+    "url": null,
+    "doi": null,
+    "venue": "21st Canadian Society for Biomechanics Conference, Montreal, QC"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Using Computer Vision Sensing Technologies for Anterior Cruciate Ligament Injury Screening",
+    "year": 2020,
+    "url": null,
+    "doi": null,
+    "venue": "Orthopaedic Research Society Annual Meeting, Phoenix, AZ"
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Does the Conditioning Method Influence the Interpretation of Differences in Bench Press Velocity?",
+    "year": 2018,
+    "url": null,
+    "doi": null,
+    "venue": "20th Canadian Society for Biomechanics Conference, Halifax, NS"
+  }
+]
