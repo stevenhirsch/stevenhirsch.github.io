@@ -1,5 +1,13 @@
 [
   {
+    "putCode": 225428780,
+    "type": "journal-article",
+    "title": "JumpMetrics: A Python package computing countermovement and squat jump events and metrics",
+    "year": 2026,
+    "url": "https://doi.org/10.21105/joss.10651",
+    "doi": "10.21105/joss.10651"
+  },
+  {
     "putCode": 189547525,
     "type": "journal-article",
     "title": "A comparison of lower extremity squat, lunge, and hip hinge kinematics between marker based and markerless motion capture systems",
@@ -48,6 +56,15 @@
     "doi": null
   },
   {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Predicting Reps in Reserve with Machine Learning",
+    "year": 2024,
+    "url": null,
+    "doi": null,
+    "venue": "3DAHM International Symposium, Montevideo, Uruguay"
+  },
+  {
     "putCode": 155837580,
     "type": "journal-article",
     "title": "A comparison of five methods to normalize joint moments during running",
@@ -62,6 +79,15 @@
     "year": 2023,
     "url": null,
     "doi": null
+  },
+  {
+    "putCode": null,
+    "type": "conference-paper",
+    "title": "Re-Distributions in Mechanical Energy Expenditure Caused by Restricting Spine Motion During Lifting",
+    "year": 2023,
+    "url": null,
+    "doi": null,
+    "venue": "46th American Society of Biomechanics Conference, Knoxville, TN"
   },
   {
     "putCode": 155837586,
@@ -88,48 +114,6 @@
     "doi": null
   },
   {
-    "putCode": 155837583,
-    "type": "journal-article",
-    "title": "Considerations for velocity-based training: the instruction to move “as fast as possible” is less effective than a target velocity",
-    "year": 2021,
-    "url": null,
-    "doi": null
-  },
-  {
-    "putCode": 155837587,
-    "type": "journal-article",
-    "title": "Interpreting Knee Valgus: Orthogonal Distance Vs Cardan/Euler Angles",
-    "year": 2020,
-    "url": null,
-    "doi": null
-  },
-  {
-    "putCode": 155837585,
-    "type": "dissertation-thesis",
-    "title": "Instrument, Analysis, and Coaching Considerations with Velocity-Based Training",
-    "year": 2018,
-    "url": null,
-    "doi": null
-  },
-  {
-    "putCode": null,
-    "type": "conference-paper",
-    "title": "Predicting Reps in Reserve with Machine Learning",
-    "year": 2024,
-    "url": null,
-    "doi": null,
-    "venue": "3DAHM International Symposium, Montevideo, Uruguay"
-  },
-  {
-    "putCode": null,
-    "type": "conference-paper",
-    "title": "Re-Distributions in Mechanical Energy Expenditure Caused by Restricting Spine Motion During Lifting",
-    "year": 2023,
-    "url": null,
-    "doi": null,
-    "venue": "46th American Society of Biomechanics Conference, Knoxville, TN"
-  },
-  {
     "putCode": null,
     "type": "conference-paper",
     "title": "Kinematic Adaptations to Limiting Lumbar Spine Flexion Across Lifting Tasks",
@@ -148,6 +132,14 @@
     "venue": "5th North American Congress on Biomechanics, Ottawa, ON"
   },
   {
+    "putCode": 155837583,
+    "type": "journal-article",
+    "title": "Considerations for velocity-based training: the instruction to move “as fast as possible” is less effective than a target velocity",
+    "year": 2021,
+    "url": null,
+    "doi": null
+  },
+  {
     "putCode": null,
     "type": "conference-paper",
     "title": "Comparing Eight Normalization Methods for Net Joint Moment Data in the Single-Leg Squat",
@@ -155,14 +147,6 @@
     "url": null,
     "doi": null,
     "venue": "28th Congress of the International Society of Biomechanics, Stockholm, Sweden"
-  },
-  {
-    "putCode": 155837579,
-    "type": "conference-paper",
-    "title": "Velocity-Based Training: Exploring the Potential Implications of Training with Absolute versus Relative Velocities",
-    "year": 2017,
-    "url": null,
-    "doi": null
   },
   {
     "putCode": null,
@@ -183,6 +167,14 @@
     "venue": "21st Canadian Society for Biomechanics Conference, Montreal, QC"
   },
   {
+    "putCode": 155837587,
+    "type": "journal-article",
+    "title": "Interpreting Knee Valgus: Orthogonal Distance Vs Cardan/Euler Angles",
+    "year": 2020,
+    "url": null,
+    "doi": null
+  },
+  {
     "putCode": null,
     "type": "conference-paper",
     "title": "Using Computer Vision Sensing Technologies for Anterior Cruciate Ligament Injury Screening",
@@ -192,6 +184,14 @@
     "venue": "Orthopaedic Research Society Annual Meeting, Phoenix, AZ"
   },
   {
+    "putCode": 155837585,
+    "type": "dissertation-thesis",
+    "title": "Instrument, Analysis, and Coaching Considerations with Velocity-Based Training",
+    "year": 2018,
+    "url": null,
+    "doi": null
+  },
+  {
     "putCode": null,
     "type": "conference-paper",
     "title": "Does the Conditioning Method Influence the Interpretation of Differences in Bench Press Velocity?",
@@ -199,5 +199,13 @@
     "url": null,
     "doi": null,
     "venue": "20th Canadian Society for Biomechanics Conference, Halifax, NS"
+  },
+  {
+    "putCode": 155837579,
+    "type": "conference-paper",
+    "title": "Velocity-Based Training: Exploring the Potential Implications of Training with Absolute versus Relative Velocities",
+    "year": 2017,
+    "url": null,
+    "doi": null
   }
 ]
